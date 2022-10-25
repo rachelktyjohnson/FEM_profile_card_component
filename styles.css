@@ -1,7 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  background: #19a2ae;
+  background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+  background-position: top -600px left -700px, bottom -600px right -700px;
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+}
+@media (min-width: 600px) {
+  body {
+    background-position: top -400px left -300px, bottom -400px right -300px;
+  }
+}
+body main {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+body main .card {
+  background: white;
+  width: 330px;
+  text-align: center;
+  border-radius: 15px;
+}
+body main .card .images img.card-pattern {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+body main .card .images img.user-image {
+  border-radius: 100%;
+  border: 5px white solid;
+  margin-top: -48px;
+}
+body main .card .content {
+  padding: 20px;
+}
+body main .card .content .user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .card .content .user h1.name {
+  font-size: 1.2rem;
+}
+body main .card .content .user p.age {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  color: #6a6f81;
+}
+body main .card .content span.location {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  display: block;
+  color: #969696;
+}
+body main .card .stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 40px;
+  border-top: 1px solid #eee;
+}
+body main .card .stats .stat {
+  margin: 0 20px;
+}
+body main .card .stats .stat p.stat-detail {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+body main .card .stats .stat h2.stat-heading {
+  font-weight: 400;
+  font-size: 0.6rem;
+  letter-spacing: 1.4px;
+  color: #969696;
 }
 
 /*# sourceMappingURL=styles.css.map */
