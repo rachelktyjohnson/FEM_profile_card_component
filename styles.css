@@ -15,7 +15,7 @@ body {
 }
 @media (min-width: 600px) {
   body {
-    background-position: top -500px left -300px, bottom -500px right -300px;
+    background-position: top -500px left -300px, bottom -550px right -300px;
   }
 }
 body main {
